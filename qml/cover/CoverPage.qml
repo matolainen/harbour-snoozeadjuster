@@ -37,6 +37,26 @@ CoverBackground {
         anchors.centerIn: parent
         text: "Snooze time:\n" + app.interval + " min"
     }
+    CoverActionList {
+            id: coverAction
+
+            CoverAction {
+                iconSource: "icon-cover-reduce.png"
+                onTriggered: {
+                    app.interval > 1 ? app.interval = app.interval - 1 : app.interval = 1
+                    adjustment.set_adjustment(app.interval)
+                }
+
+            }
+
+            CoverAction {
+                iconSource: "icon-cover-add.png"
+                onTriggered: {
+                    app.interval < 60 ? app.interval = app.interval + 1 : app.interval = 60
+                    adjustment.set_adjustment(app.interval)
+                }
+            }
+        }
 }
 
 

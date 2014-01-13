@@ -12,6 +12,6 @@
 
 int main(int argc, char *argv[])
 {
-    qmlRegisterType<Adjustment>("harbour.snooze.adjustment",1,0,"Adjustment");
+    qmlRegisterType<Adjustment>("harbour.snoozeadjuster.adjustment",1,0,"Adjustment");
     return SailfishApp::main(argc, argv);
 }
