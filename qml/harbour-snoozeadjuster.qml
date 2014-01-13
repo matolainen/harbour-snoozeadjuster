@@ -30,7 +30,7 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import harbour.snooze.adjustment 1.0
+import harbour.snoozeadjuster.adjustment 1.0
 import "pages"
 
 ApplicationWindow
